@@ -1,0 +1,17 @@
+<%- include("../partials/head.ejs") %>
+</head>
+<body>
+    <%- include("../partials/nav.ejs") %>
+    <div class="card m-3">
+        <div class="card-header">
+            Dashboard
+        </div>
+        <div class="card-body">
+            <h5 class="card-title mb-4">Recently logged in user</h5>
+            <p class="card-text">Welcome, <strong><%= user.name %></strong></p>
+            <p class="card-text">Contact email: <%= user.email %></p>
+            <a href="/" class="btn btn-primary">Go to home</a>
+        </div>
+    </div>
+    <%- include("../partials/footer.ejs") %>
+
